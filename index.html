@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de la Encuesta</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultados de la Encuesta</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Centro</th>
+                    <th>Grado</th>
+                    <th>Sexo</th>
+                    <th>Edad</th>
+                    <th>Pregunta 1</th>
+                    <th>Pregunta 2</th>
+                    <th>Pregunta 3</th>
+                    <th>Pregunta 4</th>
+                    <th>Pregunta 5</th>
+                </tr>
+            </thead>
+            <tbody id="surveyResults"></tbody>
+        </table>
+    </div>
+
+    <!-- Canvas para el gráfico de barras -->
+    <div class="barras">
+        <canvas id="barChart"></canvas>
+    </div>
+<br><br><br>
+    <!-- Canvas para el gráfico circular -->
+    <div class="circulo">
+        <canvas id="pieChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
